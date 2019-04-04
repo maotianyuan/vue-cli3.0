@@ -1,0 +1,42 @@
+/*
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+
+$--color-white: #fff;
+$--color-primary: #667184;
+$--color-success: #667184;
+// $--button-default-background-color: #667184;
+// $--button-default-border-color: #ccc;
+$--color-text-regular: inherit;
+$--font-line-height-primary: 28px;
+$--tooltip-fill: transparent;
+$--tooltip-border-color: transparent;
+$--color-text-secondary: #595959;
+$--select-option-color: $--color-text-secondary;
+$--select-option-hover-background: transparentize($--color-primary, 0.9);
+
+/* Message */
+
+$--message-background-color: #fff;
+$--color-success-lighter: #fff;
+$--color-success-light: #fff;
+
+/* Menu */
+
+$--menu-item-color: $--color-text-secondary;
+
+/* Table */
+
+$--table-border: 1px solid #eee;
+$--table-row-hover-background: #e9faf3;
+$--table-header-background: #fafafa;
+.el-message {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    &__content {
+        color: $--color-text-secondary!important;
+    }
+}
+
+@import './src/assets/element/element-variables.scss';
