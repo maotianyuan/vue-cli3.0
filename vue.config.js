@@ -8,7 +8,7 @@ function resolve () {
 const outputDir = isProd && process.env.OUTPUT_DIR ? resolve(process.env.OUTPUT_DIR) : undefined
 
 module.exports = {
-  baseUrl: isProd ? '/static' : '/',
+  publicPath: isProd ? '/static' : '/',
   outputDir,
   chainWebpack: config => {
     // 添加别名
